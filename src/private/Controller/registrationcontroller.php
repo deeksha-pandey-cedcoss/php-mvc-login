@@ -13,7 +13,7 @@ if (isset($_POST)) {
       if ($result) {
          header('location:../View/login.php');
       } else {
-         header('location:../View/signup.php?msg=error');
+         header('location:../View/signup.php');
       }
    
 }
