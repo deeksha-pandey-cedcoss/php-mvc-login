@@ -6,9 +6,7 @@ if (isset($_POST)) {
    $name = $_POST['name'];
    $email = $_POST['email'];
    $pswd = $_POST['pswd'];
-   if ($name == '' || $email == '' || $pswd == '') {
-      header('location:../View/signup.php?msg=Please Fill all the fields');
-   } else {
+    
       // adding the data in database
       $attributes = array('name' => "$name", 'email' => "$email", 'pswd' => "$pswd");
       $result = User::create($attributes);
@@ -17,6 +15,6 @@ if (isset($_POST)) {
       } else {
          header('location:../View/signup.php?msg=error');
       }
-   }
+   
 }
 ?>

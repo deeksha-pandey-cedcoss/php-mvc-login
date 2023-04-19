@@ -1,9 +1,3 @@
-<?php
-if(isset($_GET['msg'])){
-    echo $_GET['msg'];
-    unset($_GET['msg']);
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
